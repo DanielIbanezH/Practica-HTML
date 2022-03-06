@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+</head>
+<body>
+    <header>
+        <h1>Pasteleria Astrea</h1>
+        <img src="./Imagenes/ASTREA.png" width="200" height="200">
+        <aside>
+            <h6>Donde hacemos Realidad tu pastel de ensueño</h6>
+        </aside>
+        <hr size=5 width=100% align=left>
+        <a href="./inicio.html"><button>Inicio</button></a>
+        <a href="./pedidos.html"><button>Pedidos</button></a>
+        <hr size=5 width=100% align=left>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                
+                <h3>Pedidos</h3>
+                <p>Para poder realizar tu pedido es necesario seleccionar el ingrediente y la decoración 
+                    que tendrá el pastel que deseas, se pueden combinar varios sabores y adornos en un 
+                    mismo pastel. A continuación, se muestra la lista de ingredientes y decoraciones:</p>
+                <hr size=2 width=100% align=left>
+                <h3>Ingredientes</h3>
+                <table>
+                    <tr>
+                        <ul>
+                            <td><li>Chocolate<br><figure><img src="./Imagenes/Chocolate.png" width="200" height="200"><figcaption>Precio: 100$</figcaption></figure></li></td>
+                            <td><li>Fresa<br><figure><img src="./Imagenes/Fresa.png" width="200" height="200"><figcaption>Precio: 120$</figcaption></figure></li></td>
+                            <td><li>Vainilla<br><figure><img src="./Imagenes/Vainilla.png" width="200" height="200"><figcaption>Precio: 130$</figcaption></figure></li></td>
+                            <td><li>Frutales<br><figure><img src="./Imagenes/Frutal.png" width="200" height="200"><figcaption>Precio: 180$</figcaption></figure></li></td>
+                        </ul>
+                    </tr>
+                </table>
+                <hr size=2 width=100% align=left>
+                <h3>Decoraciones</h3>
+                <table>
+                    <tr>
+                        <ul>
+                            <td><li>Chocolate solido<br><figure><img src="./Imagenes/Chocolate_solido.png" width="200" height="200"><figcaption>Precio: 60$</figcaption></figure></li></td>
+                            <td><li>Seccionado de piso<br><figure><img src="./Imagenes/Seccionado.png" width="200" height="200"><figcaption>Precio: 105$</figcaption></figure></li></td>
+                            <td><li>Recubrimiento de Betum<br><figure><img src="./Imagenes/Recubrimiento.png" width="200" height="200"><figcaption>Precio: 84$</figcaption></figure></li></td>
+                            <td><li>Frutas<br><figure><img src="./Imagenes/Frutas.png" width="200" height="200"><figcaption>Precio: 75$</figcaption></figure></li></td>
+                        </ul>
+                    </tr>
+                </table>
+            </article>
+        </section>
+
+        <section>
+            <hr size=2 width=100% align=left>
+            <h3>Formulario de pedido</h3>
+            <p>Conteste y rellene el siguiente formulario para procesar su pedido.</p>
+            <form action="pedido.js">
+                <label for="Nombre"> 
+                    <span>¿Cual es tu nombre?</span> <br>
+                    <input type="text" id="Nombre" placeholder="Tu nombre" autocomplete="name" required>
+                </label><br><br>
+                <label for="Numero"> 
+                    <span>¿Cual es tu telefono?</span> <br>
+                    <input type="tel" id="Numero" placeholder="Numero telefonico" autocomplete="tel-local" required>
+                </label><br><br>
+                <label for="Correo"> 
+                    <span>¿Cual es tu correo?</span> <br>
+                    <input type="email" id="Correo" placeholder="Correo Electronico" autocomplete="email" required>
+                </label><br><br>
+                <label for="Descripcion"> 
+                    <span>Descripcion de tu pastel</span> <br>
+                    <input type="text" id="Descripcion" placeholder="Descripcion" required>
+                </label><br>
+                <P>¿Que sabores quieres en el pastel?</P>
+                <input type="checkbox" id="Sabores1" name="Sabores1" value="Chocolate">
+                <label for="Sabores1">Chocolate</label>
+                <input type="checkbox" id="Sabores2" name="Sabores2" value="Fresa">
+                <label for="Sabores2">Fresa</label>
+                <input type="checkbox" id="Sabores3" name="Sabores3" value="Vainilla">
+                <label for="Sabores3">Vainilla</label>
+                <input type="checkbox" id="Sabores4" name="Sabores4" value="Frutal">
+                <label for="Sabores4">Frutas</label><br>
+
+                <P>¿Que decoraciones quieres que tenga el pastel?</P>
+                <input type="checkbox" id="Decoracion1" name="Decoracion1" value="Chocolate Solido">
+                <label for="Decoracion1">Chocolate Solido</label>
+                <input type="checkbox" id="Decoracion2" name="Decoracion2" value="Seccionado de piso">
+                <label for="Decoracion2">Seccionado de piso</label>
+                <input type="checkbox" id="Decoracion3" name="Decoracion3" value="Recubrimiento de betun">
+                <label for="Decoracion3">Recubrimiento de betun</label>
+                <input type="checkbox" id="Decoracion4" name="Decoracion4" value="Frutas">
+                <label for="Decoracion4">Frutas</label><br><br>
+                <input type="submit">
+                <input type="reset">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr size=5 width=100% align=left>
+        <h6>Tu satisfaccion nuestra conviccion <br>
+            Pastelerias Astrea © 2022
+        </h6>
+    </footer>
+
+</body>
+</html>
